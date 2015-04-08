@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.homepage     = 'https://github.com/kami30k/vagrant-serverkit'
 
   s.files        = `git ls-files -z`.split("\x0")
-  s.executables  = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_path = 'lib'
 
   s.add_development_dependency 'bundler'
