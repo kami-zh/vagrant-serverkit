@@ -4,8 +4,6 @@ vagrant-serverkit is a vagrant plugin for [Serverkit](https://github.com/r7kamur
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```
 $ vagrant plugin install vagrant-serverkit
 ```
