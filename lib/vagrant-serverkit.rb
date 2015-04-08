@@ -1,0 +1,1 @@
+require 'vagrant-serverkit/plugin'
