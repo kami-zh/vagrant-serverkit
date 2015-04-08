@@ -1,27 +1,21 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'vagrant/serverkit/version'
+$:.unshift File.expand_path('../lib', __FILE__)
 
-Gem::Specification.new do |spec|
-  spec.name          = "vagrant-serverkit"
-  spec.version       = Vagrant::Serverkit::VERSION
-  spec.authors       = ["kami"]
-  spec.email         = ["kami30k@gmail.com"]
+require 'vagrant-serverkit/version'
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+Gem::Specification.new do |s|
+  s.name         = 'vagrant-serverkit'
+  s.version      = VagrantPlugins::Serverkit::VERSION
+  s.authors      = 'kami'
+  s.email        = 'kami30k@gmail.com'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  s.summary      = 'Vagrant plugin for Serverkit.'
+  s.description  = 'Vagrant plugin for Serverkit.'
+  s.homepage     = 'https://github.com/kami30k/vagrant-serverkit'
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
+  s.files        = `git ls-files -z`.split("\x0")
+  s.executables  = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.require_path = 'lib'
 
-  spec.add_development_dependency "bundler", "~> 1.9"
-  spec.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'rake'
 end
