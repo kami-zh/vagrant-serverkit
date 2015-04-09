@@ -1,0 +1,11 @@
+Vagrant.configure(2) do |config|
+  config.vm.box = 'ubuntu/trusty32'
+
+  config.vm.provision :serverkit do |config|
+    config.host = 'vagrant_serverkit'
+
+    config.recipe = 'recipe.yml'
+
+    config.variables = 'variables.yml'
+  end
+end
