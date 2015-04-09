@@ -13,6 +13,7 @@ $ vagrant plugin install vagrant-serverkit
 Set up `~/.ssh/config`:
 
 ```
+$ vagrant up
 $ vagrant ssh-config --host host_name >> ~/.ssh/config
 ```
 
@@ -36,7 +37,7 @@ end
 Run:
 
 ```
-$ vagrant up
+$ vagrant provision
 ```
 
 ## Contributing
