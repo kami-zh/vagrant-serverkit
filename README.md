@@ -10,7 +10,34 @@ $ vagrant plugin install vagrant-serverkit
 
 ## Usage
 
-TODO: Write usage instructions here
+Set up `~/.ssh/config`:
+
+```
+$ vagrant ssh-config --host host_name >> ~/.ssh/config
+```
+
+Configure `Vagrantfile`:
+
+```ruby
+Vagrant.configure(2) do |config|
+  config.vm.provision :serverkit do |config|
+    # Host name set in ~/.ssh/confg
+    config.host = 'host_name'
+
+    # Path to the recipe file
+    config.recipe = 'recipe.yml'
+
+    # Path to the variables file (Optional)
+    config.variables = 'variables.yml'
+  end
+end
+```
+
+Run:
+
+```
+$ vagrant up
+```
 
 ## Contributing
 
