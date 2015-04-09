@@ -7,5 +7,5 @@ group :development do
 end
 
 group :plugins do
-  gem 'vagrant-serverkit', path: '.'
+  gem 'vagrant-serverkit-mock', path: '.'
 end
