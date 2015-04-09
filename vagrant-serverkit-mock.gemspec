@@ -3,7 +3,7 @@ $:.unshift File.expand_path('../lib', __FILE__)
 require 'vagrant-serverkit/version'
 
 Gem::Specification.new do |s|
-  s.name         = 'vagrant-serverkit'
+  s.name         = 'vagrant-serverkit-mock'
   s.version      = VagrantPlugins::Serverkit::VERSION
   s.authors      = 'kami'
   s.email        = 'kami30k@gmail.com'
