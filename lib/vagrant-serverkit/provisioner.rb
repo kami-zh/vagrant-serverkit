@@ -11,6 +11,7 @@ module VagrantPlugins
 
       def options
         [
+          'apply',
           config.recipe,
           "--variables=#{config.variables}",
           "--hosts=#{config.host}"
