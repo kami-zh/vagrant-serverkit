@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.files        = `git ls-files -z`.split("\x0")
   s.require_path = 'lib'
 
-  s.add_dependency 'serverkit'
+  s.add_dependency 'serverkit', '= 0.2.3'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'rake'
