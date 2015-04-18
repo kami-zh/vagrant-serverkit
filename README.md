@@ -1,6 +1,7 @@
 # vagrant-serverkit (Mock)
 
 vagrant-serverkit is a vagrant plugin for [Serverkit](https://github.com/r7kamura/serverkit/).
+This plugin dependents on `serverkit v0.2.3`.
 
 ## Installation
 
