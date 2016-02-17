@@ -47,7 +47,7 @@ $ vagrant provision
 
 ## Contributing
 
-1. Fork it ( https://github.com/kami30k/vagrant-serverkit/fork )
+1. Fork it ( https://github.com/kami-zh/vagrant-serverkit/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
